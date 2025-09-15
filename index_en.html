@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Vedora AdShield Premium</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body { font-family: Arial, sans-serif; margin:0; padding:0; background:#f8f9fa; color:#333; }
+    header { text-align:center; padding:50px 20px; background:#2d3436; color:white; position:relative; }
+    header img { width:80px; margin-bottom:20px; }
+    header h1 { margin:0; font-size:2.5em; }
+    .btn { display:inline-block; padding:15px 25px; margin-top:20px; background:#0984e3; color:white; text-decoration:none; border-radius:8px; }
+    section { max-width:900px; margin:50px auto; padding:0 20px; }
+    h2 { text-align:center; margin-bottom:20px; }
+    .features { display:flex; flex-wrap:wrap; justify-content:space-around; }
+    .feature { flex:1 1 250px; margin:15px; background:white; padding:20px; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.1); text-align:center; }
+    footer { text-align:center; padding:20px; background:#2d3436; color:white; font-size:0.9em; }
+    .lang-switch { position:absolute; top:20px; right:20px; }
+    .lang-switch button { margin:0 5px; padding:5px 10px; border:none; border-radius:5px; cursor:pointer; }
+    .logo {
+  width: 1200px;   /* força largura máxima */
+  max-width: 100%; /* para não quebrar no celular */
+  height: auto;    /* mantém proporção */
+  display: block;
+  margin: 0 auto;  /* centraliza no header */
+}
+  </style>
+</head>
+<body>
+  <header>
+   <div class="lang-switch" style="text-align:center; margin:15px;">
+  <a href="index_en.html" style="margin:0 10px; text-decoration:none; color:#ffffff;">EN</a> | 
+  <a href="index_pt.html" style="margin:0 10px; text-decoration:none; color:#ffffff;">PT-BR</a> | 
+  <a href="index_es.html" style="margin:0 10px; text-decoration:none; color:#ffffff;">ES</a>
+</div>
+
+
+    <img src="images/vedora-logo.png" alt="Vedora AdShield Premium Logo">
+    <h1>Vedora AdShield Premium</h1>
+    <p>Say goodbye to ads on YouTube and across the web. 15 days free!</p>
+    <a href="#" class="btn">Install Extension</a>
+  </header>
+
+  <section>
+    <h2>Why choose Vedora AdShield Premium?</h2>
+    <div class="features">
+      <div class="feature">
+        <h3>🚫 No ads on YouTube</h3>
+        <p>Enjoy your videos without interruptions.</p>
+      </div>
+      <div class="feature">
+        <h3>⚡ Fast & Lightweight</h3>
+        <p>Runs in the background without slowing your browser.</p>
+      </div>
+      <div class="feature">
+        <h3>🔒 Secure</h3>
+        <p>No data collection, only ad blocking.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Premium Plan</h2>
+    <p style="text-align:center;">After your 15-day free trial, continue for just <strong>USD 2.50/month</strong>.</p>
+    <div style="text-align:center;">
+      <a href="https://www.paypal.com/paypalme/seulink" class="btn">Upgrade Now</a>
+    </div>
+  </section>
+<footer style="text-align:center; padding:20px; background:#2d3436; color:white;">
+  <p>© 2025 Vedora. All rights reserved.</p>
+  <p>
+    Developed by <strong>LuCa Passos</strong>
+  </p>
+  <p>
+    <a href="privacy_en.html" style="color:#00cec9;">Privacy Policy</a> | 
+    <a href="support_en.html" style="color:#00cec9;">Support</a>
+  </p>
+</footer>
+
+
+  <!-- Google Translate Script -->
+  <script type="text/javascript">
+    function translatePage(lang) {
+      const googleTranslateElement = document.createElement("script");
+      googleTranslateElement.type = "text/javascript";
+      googleTranslateElement.src = "//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit";
+      document.body.appendChild(googleTranslateElement);
+      window.googleTranslateElementInit = function() {
+        new google.translate.TranslateElement({
+          pageLanguage: 'en',
+          includedLanguages: 'en,pt,es',
+          autoDisplay: false
+        }, 'google_translate_element');
+      };
+      setTimeout(() => {
+        document.querySelector('.goog-te-combo').value = lang;
+        document.querySelector('.goog-te-combo').dispatchEvent(new Event('change'));
+      }, 500);
+    }
+  </script>
+  <div id="google_translate_element" style="display:none;"></div>
+</body>
+</html>
